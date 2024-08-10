@@ -9,7 +9,7 @@ interface PatientItemProps {
 const PatientItem: React.FC<PatientItemProps> = ({ patient, onSave }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
-  
+
   const [editName, setEditName] = useState(patient.name);
   const [editWebsite, setEditWebsite] = useState(patient.website);
   const [editDescription, setEditDescription] = useState(patient.description);
@@ -28,7 +28,7 @@ const PatientItem: React.FC<PatientItemProps> = ({ patient, onSave }) => {
         description: editDescription,
         createdAt: editCreatedAt,
       };
-      
+
       onSave(updatedPatient);
       setIsEditing(false);
     } else {
@@ -38,7 +38,13 @@ const PatientItem: React.FC<PatientItemProps> = ({ patient, onSave }) => {
 
   return (
     <li className="flex flex-col justify-center items-center p-4 rounded-xl bg-[#EFEFEF] border-white">
-      <img src={patient.avatar} alt='Avatar' width={111} height={111} className='rounded-full mb-4' />
+      <img
+        src={patient.avatar}
+        alt="Avatar"
+        width={111}
+        height={111}
+        className="rounded-full mb-4"
+      />
       {isEditing ? (
         <>
           <input
@@ -72,7 +78,9 @@ const PatientItem: React.FC<PatientItemProps> = ({ patient, onSave }) => {
         </>
       ) : (
         <>
-          <p className='lg:text-2xl self-center capitalize font-semibold'>{patient.name}</p>
+          <p className="lg:text-2xl self-center capitalize font-semibold">
+            {patient.name}
+          </p>
           <p>{patient.website}</p>
           {isExpanded && (
             <>
@@ -80,9 +88,10 @@ const PatientItem: React.FC<PatientItemProps> = ({ patient, onSave }) => {
               <p>{patient.createdAt}</p>
             </>
           )}
-          <button 
-            onClick={handleToggle} 
-            className="mt-2 p-2 bg-blue-500 text-white rounded-xl">
+          <button
+            onClick={handleToggle}
+            className="mt-2 p-2 bg-blue-500 text-white rounded-xl"
+          >
             {isExpanded ? 'Collapse' : 'Expand'}
           </button>
         </>

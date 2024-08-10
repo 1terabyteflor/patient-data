@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Patient } from '../models/Patient';
-import { getPatients } from '../api/patientService'
+import { getPatients } from '../api/patientService';
 
 export const useFetchPatients = () => {
   const [patients, setPatients] = useState<Patient[]>([]);
@@ -13,7 +13,7 @@ export const useFetchPatients = () => {
         const data = await getPatients();
         setPatients(data);
         setLoading(false);
-        console.log(data)
+        console.log(data);
       } catch (error) {
         setError('Failed to fetch patient data');
         setLoading(false);

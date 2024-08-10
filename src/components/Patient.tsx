@@ -16,8 +16,8 @@ const Home: React.FC = () => {
   const editPatient = (updatedPatient: Patient) => {
     setPatients((prevPatients) =>
       prevPatients.map((patient) =>
-        patient.id === updatedPatient.id ? updatedPatient : patient
-      )
+        patient.id === updatedPatient.id ? updatedPatient : patient,
+      ),
     );
   };
 
