@@ -17,11 +17,11 @@ const PatientDetails: React.FC<{ patient: Patient; onEdit: () => void }> = ({
           size={111}
           roundedImg={false}
         />
-        <div className="flex flex-col px-4">
+        <div className="flex flex-col px-4 h-[111px] w-full">
           <p className="text-xl capitalize font-semibold">{patient.name}</p>
-          <p className="text-xs">
+          <p className="text-xs flex gap-x-1">
             <strong>Website: </strong>
-            {patient.website}
+            <p className="underline cursor-pointer">{patient.website}</p>
           </p>
           <p className="text-xs">
             <strong>Created At: </strong>

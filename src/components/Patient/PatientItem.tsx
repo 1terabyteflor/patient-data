@@ -59,7 +59,7 @@ const PatientItem: React.FC<PatientItemProps> = ({
     <li className="w-full transition-transform duration-500 ease-in-out">
       <button
         onClick={handleToggle}
-        className="flex w-full px-4 py-2 my-2 border-y rounded-3xl border-gray-300 hover:cursor-pointer hover:bg-secondary-cyan transform transition-transform duration-200 focus:outline-none hover:shadow-lg hover:scale-[1.005]"
+        className="flex w-full px-4 py-2 border-y border-gray-300 hover:cursor-pointer hover:bg-secondary-cyan transform transition-transform duration-200 focus:outline-none hover:shadow-lg hover:scale-[1.005]"
       >
         <div className="flex justify-between gap-x-4 items-center w-full">
           <PatientHeader patient={patient} />

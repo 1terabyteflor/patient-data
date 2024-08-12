@@ -67,7 +67,7 @@ const PatientList: React.FC<PatientListProps> = ({
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.3 }}
-        className="grid grid-cols-1 gap-1"
+        className="grid grid-cols-1"
       >
         {patientsList.map((patient) => (
           <PatientItem
