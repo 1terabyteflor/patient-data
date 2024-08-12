@@ -72,7 +72,7 @@ const PatientItem: React.FC<PatientItemProps> = ({
       </button>
       <div
         className={`overflow-hidden transition-all duration-500 ease-in-out ${
-          isExpanded ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+          isExpanded ? 'max-h-[700px] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
         <div className="p-4">
