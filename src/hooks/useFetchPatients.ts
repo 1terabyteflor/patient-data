@@ -14,8 +14,9 @@ export const useFetchPatients = () => {
         setPatients(data);
         setLoading(false);
         console.log(data);
-      } catch (error) {
-        setError('Failed to fetch patient data');
+      } catch {
+        setError('Error getting patients');
+      } finally {
         setLoading(false);
       }
     };
