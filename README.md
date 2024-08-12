@@ -1,46 +1,26 @@
-# Getting Started with Create React App
+# Patient Data Management 
+This web application built in React enables users to manage patient data from [this API](https://63bedcf7f5cfc0949b634fc8.mockapi.io/users).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Setup 
 
-## Available Scripts
+- Clone this repository
+- Install dependencies with `npm install`
+- Run the application locally with `npm run start` 
+The application should now be running at http://localhost:3000
 
-In the project directory, you can run:
+### Technologies
 
-### `npm start`
+- React: Core framework.
+- Tailwind CSS: The UI is styled entirely with Tailwind CSS to create a responsive design with a mobile first approach and some smooth transitions. 
+- Axios: HTTP client for making API requests.
+- The application is divided into reusable and self-contained components and hooks. Each component handles its own state and logic, making the code modular and easy to maintain.
+- Framer Motion: Animation library applied to form and patient list. 
+- ESLint/Prettier: Code linting and formatting to ensure code quality.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Features 
+- Get patient records: Fetches a list of patient records from an API.
+- Display patients: Patient records are displayed individually in a list.
+- Each patient card includes an option to expand or collapse additional details.
+- Edit/add patients: Users can edit existing patient information or add a new one through a form component.
+- Responsive for mobile/tablet/desktop.
