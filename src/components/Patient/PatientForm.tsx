@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Patient } from '../models/Patient';
+import { Patient } from '../../models/Patient';
 
 interface PatientFormProps {
   onSubmit: (patient: Patient) => void;

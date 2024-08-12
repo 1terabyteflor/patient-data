@@ -3,7 +3,14 @@ export interface Patient {
   name: string;
   website: string;
   description: string;
-  address: string;
   createdAt: string;
-  avatar: string;
+  address?: string;
+  avatar?: string;
+}
+
+export interface FormProps {
+  patientData: Patient;
+  setPatientData: (data: Partial<Patient>) => void;
+  onSubmit: () => void;
+  onCancel?: () => void;
 }
